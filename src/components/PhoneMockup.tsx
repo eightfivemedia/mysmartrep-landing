@@ -10,7 +10,6 @@ const sliderImages = [
   '/images/screenshots/Simulator Screenshot - iPhone 17 Pro - 2.png',
   '/images/screenshots/Simulator Screenshot - iPhone 17 Pro - 3.png',
   '/images/screenshots/Simulator Screenshot - iPhone 17 Pro - 4.png',
-  '/images/screenshots/Simulator Screenshot - iPhone 17 Pro - 5.png',
 ]
 
 export default function PhoneMockup() {
@@ -29,14 +28,14 @@ export default function PhoneMockup() {
     <div className="relative w-full max-w-md mx-auto">
       <div className="relative">
         <div className="relative w-full h-[650px] overflow-hidden">
-          <AnimatePresence mode="wait">
+          <AnimatePresence initial={false}>
             <motion.div
               key={currentIndex}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '-100%' }}
               transition={{
-                duration: 0.6,
+                duration: 1.2,
                 ease: [0.4, 0, 0.2, 1] // cubic-bezier easing
               }}
               className="absolute inset-0"
