@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 26 26 26;
+    --foreground: 241 245 249;
+  }
+
+  body {
+    @apply bg-background text-text-primary;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, rgba(139, 92, 246, 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
