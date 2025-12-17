@@ -22,20 +22,26 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex gap-6 text-sm">
-            <Link
-              href="/privacy"
-              className="text-gray-400 hover:text-white transition"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="text-gray-400 hover:text-white transition"
-            >
-              Terms of Service
-            </Link>
-          </div>
+                  <div className="flex gap-6 text-sm">
+                    <Link
+                      href="/privacy"
+                      className="text-gray-400 hover:text-white transition"
+                    >
+                      Privacy Policy
+                    </Link>
+                    <Link
+                      href="/terms"
+                      className="text-gray-400 hover:text-white transition"
+                    >
+                      Terms of Service
+                    </Link>
+                    <Link
+                      href="/support"
+                      className="text-gray-400 hover:text-white transition"
+                    >
+                      Help
+                    </Link>
+                  </div>
         </div>
       </div>
     </footer>

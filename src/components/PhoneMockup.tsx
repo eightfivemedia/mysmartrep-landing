@@ -28,15 +28,15 @@ export default function PhoneMockup() {
     <div className="relative w-full max-w-md mx-auto">
       <div className="relative">
         <div className="relative w-full h-[650px] overflow-hidden">
-          <AnimatePresence initial={false}>
+          <AnimatePresence initial={false} mode="wait">
             <motion.div
               key={currentIndex}
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '-100%' }}
+              initial={{ x: '50%', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '-50%', opacity: 0 }}
               transition={{
-                duration: 1.2,
-                ease: [0.4, 0, 0.2, 1] // cubic-bezier easing
+                duration: 0.8,
+                ease: [0.4, 0, 0.2, 1] // ease-in-out cubic-bezier
               }}
               className="absolute inset-0"
             >
