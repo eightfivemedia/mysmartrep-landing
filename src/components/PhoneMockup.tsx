@@ -28,14 +28,14 @@ export default function PhoneMockup() {
     <div className="relative w-full max-w-md mx-auto">
       <div className="relative">
         <div className="relative w-full h-[650px] overflow-hidden">
-          <AnimatePresence initial={false} mode="wait">
+          <AnimatePresence initial={false}>
             <motion.div
               key={currentIndex}
-              initial={{ x: '50%', opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: '-50%', opacity: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{
-                duration: 0.8,
+                duration: 2.0,
                 ease: [0.4, 0, 0.2, 1] // ease-in-out cubic-bezier
               }}
               className="absolute inset-0"
@@ -52,8 +52,8 @@ export default function PhoneMockup() {
           </AnimatePresence>
         </div>
 
-        {/* Progress indicators */}
-        <div className="absolute -bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
+        {/* Progress indicators - hidden */}
+        <div className="absolute -bottom-4 left-0 right-0 flex justify-center gap-2 z-20 hidden">
           {sliderImages.map((_, index) => (
             <button
               key={index}
