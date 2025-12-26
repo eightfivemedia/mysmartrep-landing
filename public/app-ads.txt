@@ -1,6 +1,1 @@
-# app-ads.txt file for SmartRep
-# App ID: ca-app-pub-5558499689705730~8580105274
-# Publisher ID: pub-5558499689705730
-
 google.com, pub-5558499689705730, DIRECT, f08c47fec0942fa0
-
