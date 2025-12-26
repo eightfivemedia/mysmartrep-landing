@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 
-const APP_STORE_URL = process.env.NEXT_PUBLIC_APP_STORE_URL || 'https://apps.apple.com/app/smartrep/id[YOUR_APP_ID]'
+const APP_STORE_URL = process.env.NEXT_PUBLIC_APP_STORE_URL || 'https://apps.apple.com/us/app/smartrep-ai-fitness-trainer/id6756490101'
 
 export default function DownloadButton() {
   return (
