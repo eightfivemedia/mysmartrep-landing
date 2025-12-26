@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/:path((?!app-ads\\.txt$).*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.mysmartrep.com"
+        }
+      ],
+      "destination": "https://mysmartrep.com/:path",
+      "permanent": true
+    }
+  ]
+}
+
