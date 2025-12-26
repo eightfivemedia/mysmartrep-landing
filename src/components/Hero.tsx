@@ -35,7 +35,7 @@ export default function Hero() {
 
             {/* Subheadline */}
             <div className="space-y-4">
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-2xl mx-auto lg:mx-0 text-center">
+              <p className="text-base sm:text-lg md:text-xl lg:text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 text-center">
                 Stop guessing at the gym. Get instant AI analysis, personalized meal plans,
                 and 24/7 coaching.
               </p>
@@ -50,11 +50,6 @@ export default function Hero() {
             <div className="flex justify-center">
               <DownloadButton />
             </div>
-
-            {/* Optional: Social proof */}
-            <p className="text-sm text-gray-400 text-center">
-            A simple, intuitive design for everyday training
-            </p>
           </div>
 
           {/* Right Side: Phone Mockup with Cycling Screenshots */}
