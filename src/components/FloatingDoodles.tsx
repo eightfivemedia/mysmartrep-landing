@@ -415,69 +415,78 @@ const doodles: DoodleConfig[] = [
     position: { bottom: '20%', left: '5%' },
     animation: { type: 'float', duration: 3, delay: 0.6 },
   },
-  // Center-left area
+  // Center column - filling the gap between content and phone
   {
     id: 'water-bottle',
     Component: WaterBottle,
-    position: { top: '8%', left: '30%' },
+    position: { top: '15%', left: '48%' },
     animation: { type: 'float', duration: 3.5, delay: 0.4 },
+  },
+  {
+    id: 'lightning-center',
+    Component: Lightning,
+    position: { top: '35%', left: '45%' },
+    animation: { type: 'pulse', duration: 2.5, delay: 0.7 },
   },
   {
     id: 'star-center-1',
     Component: Star,
-    position: { top: '35%', left: '25%' },
-    animation: { type: 'pulse', duration: 1.8, delay: 0.7 },
-  },
-  {
-    id: 'plus-1',
-    Component: Plus,
-    position: { bottom: '25%', left: '28%' },
-    animation: { type: 'pulse', duration: 2, delay: 1.3 },
-  },
-  // Top center
-  {
-    id: 'running-shoe',
-    Component: RunningShoe,
-    position: { top: '5%', left: '45%' },
-    animation: { type: 'float', duration: 4, delay: 0.2 },
-  },
-  {
-    id: 'star-top-center',
-    Component: Star,
-    position: { top: '18%', left: '48%' },
-    animation: { type: 'pulse', duration: 1.5, delay: 1 },
-  },
-  // Bottom center
-  {
-    id: 'rep-text',
-    Component: RepText,
-    position: { bottom: '8%', left: '42%' },
-    animation: { type: 'pulse', duration: 2.2, delay: 0.5 },
-  },
-  {
-    id: 'plus-2',
-    Component: Plus,
-    position: { bottom: '18%', left: '52%' },
+    position: { top: '28%', left: '52%' },
     animation: { type: 'pulse', duration: 1.8, delay: 0.9 },
   },
-  // Center-right area
   {
     id: 'protein',
     Component: Protein,
-    position: { top: '60%', right: '25%' },
+    position: { top: '50%', left: '47%' },
     animation: { type: 'bounce', duration: 3.2, delay: 0.8 },
+  },
+  {
+    id: 'plus-center-1',
+    Component: Plus,
+    position: { top: '42%', left: '55%' },
+    animation: { type: 'pulse', duration: 2, delay: 1.3 },
   },
   {
     id: 'star-center-2',
     Component: Star,
-    position: { top: '75%', right: '30%' },
+    position: { top: '60%', left: '50%' },
+    animation: { type: 'pulse', duration: 1.5, delay: 1.1 },
+  },
+  {
+    id: 'running-shoe',
+    Component: RunningShoe,
+    position: { top: '72%', left: '44%' },
+    animation: { type: 'float', duration: 4, delay: 0.2 },
+  },
+  {
+    id: 'plus-center-2',
+    Component: Plus,
+    position: { top: '22%', left: '44%' },
+    animation: { type: 'pulse', duration: 1.8, delay: 0.5 },
+  },
+  {
+    id: 'flame-center',
+    Component: Flame,
+    position: { top: '80%', left: '52%' },
+    animation: { type: 'float', duration: 3, delay: 0.6 },
+  },
+  {
+    id: 'star-center-3',
+    Component: Star,
+    position: { top: '68%', left: '56%' },
     animation: { type: 'pulse', duration: 2, delay: 1.4 },
   },
   {
-    id: 'plus-3',
-    Component: Plus,
-    position: { top: '15%', right: '28%' },
-    animation: { type: 'pulse', duration: 1.6, delay: 0.6 },
+    id: 'rep-text',
+    Component: RepText,
+    position: { bottom: '12%', left: '46%' },
+    animation: { type: 'pulse', duration: 2.2, delay: 0.3 },
+  },
+  {
+    id: 'dumbbell-center',
+    Component: Dumbbell,
+    position: { top: '8%', left: '42%' },
+    animation: { type: 'float', duration: 3.8, delay: 0.4 },
   },
   // Right side
   {
