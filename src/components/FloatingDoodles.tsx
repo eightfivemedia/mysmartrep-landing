@@ -32,7 +32,7 @@ const Dumbbell: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       d="M10 20 L70 20 M10 12 L10 28 M70 12 L70 28 M5 15 L5 25 M15 15 L15 25 M65 15 L65 25 M75 15 L75 25"
       stroke="#A78BFA"
       strokeWidth="2.5"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -52,7 +52,7 @@ const Kettlebell: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       d="M25 8 C18 8, 15 12, 15 16 C15 20, 18 22, 25 22 C32 22, 35 20, 35 16 C35 12, 32 8, 25 8 Z M18 22 L15 35 C12 45, 15 52, 25 52 C35 52, 38 45, 35 35 L32 22"
       stroke="#A78BFA"
       strokeWidth="2.5"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -72,7 +72,7 @@ const HeartPulse: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       d="M30 50 C10 35, 5 20, 15 12 C22 6, 30 12, 30 18 C30 12, 38 6, 45 12 C55 20, 50 35, 30 50 Z"
       stroke="#A78BFA"
       strokeWidth="2.5"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -80,7 +80,7 @@ const HeartPulse: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       d="M15 28 L22 28 L25 22 L30 34 L35 28 L45 28"
       stroke="#A78BFA"
       strokeWidth="2"
-      strokeOpacity="0.5"
+      strokeOpacity="0.2"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -100,7 +100,7 @@ const Lightning: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       d="M25 5 L10 30 L20 30 L15 55 L35 25 L22 25 Z"
       stroke="#A78BFA"
       strokeWidth="2.5"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -122,13 +122,13 @@ const Stopwatch: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       r="18"
       stroke="#A78BFA"
       strokeWidth="2.5"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
     />
     <path
       d="M20 5 L30 5 M25 5 L25 17 M25 35 L25 25 M25 35 L32 30 M40 20 L45 15"
       stroke="#A78BFA"
       strokeWidth="2.5"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -148,7 +148,7 @@ const FlexArm: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       d="M10 45 C10 45, 15 40, 15 35 C15 30, 20 25, 25 25 C30 25, 35 22, 38 18 C41 14, 45 12, 50 15 C50 15, 48 20, 45 25 C42 30, 40 32, 35 32 C35 32, 38 35, 38 40 C38 45, 35 48, 30 50 L10 50"
       stroke="#A78BFA"
       strokeWidth="2.5"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -170,7 +170,7 @@ const Target: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       r="20"
       stroke="#A78BFA"
       strokeWidth="2"
-      strokeOpacity="0.3"
+      strokeOpacity="0.12"
     />
     <circle
       cx="25"
@@ -178,14 +178,14 @@ const Target: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       r="12"
       stroke="#A78BFA"
       strokeWidth="2"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
     />
     <circle
       cx="25"
       cy="25"
       r="4"
       fill="#A78BFA"
-      fillOpacity="0.5"
+      fillOpacity="0.2"
     />
   </svg>
 )
@@ -206,7 +206,7 @@ const GainsText: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       fontSize="18"
       fontWeight="bold"
       fill="#A78BFA"
-      fillOpacity="0.5"
+      fillOpacity="0.2"
       fontFamily="system-ui, sans-serif"
     >
       GAINS!
@@ -227,7 +227,7 @@ const Star: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       d="M15 5 L17 12 L24 12 L18 17 L20 24 L15 19 L10 24 L12 17 L6 12 L13 12 Z"
       stroke="#A78BFA"
       strokeWidth="1.5"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -247,7 +247,7 @@ const Flame: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
       d="M20 5 C20 5, 35 20, 35 35 C35 45, 28 50, 20 50 C12 50, 5 45, 5 35 C5 28, 10 22, 15 18 C15 18, 12 25, 15 30 C18 35, 25 32, 22 25 C22 25, 28 28, 28 35 C28 40, 24 45, 20 45 C16 45, 12 40, 12 35 C12 30, 20 20, 20 5 Z"
       stroke="#A78BFA"
       strokeWidth="2"
-      strokeOpacity="0.4"
+      strokeOpacity="0.15"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
@@ -357,8 +357,8 @@ const getAnimationProps = (animation: DoodleConfig['animation']) => {
       }
     case 'pulse':
       return {
-        scale: [1, 1.15, 1],
-        opacity: [0.4, 0.7, 0.4],
+        scale: [1, 1.1, 1],
+        opacity: [0.15, 0.3, 0.15],
         transition: {
           duration: animation.duration,
           repeat: Infinity,
