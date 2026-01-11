@@ -254,7 +254,137 @@ const Flame: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 )
 
+const WaterBottle: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    width="35"
+    height="60"
+    viewBox="0 0 35 60"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M12 5 L23 5 M14 5 L14 12 L10 18 L10 52 C10 55, 12 57, 17.5 57 C23 57, 25 55, 25 52 L25 18 L21 12 L21 5"
+      stroke="#A78BFA"
+      strokeWidth="2"
+      strokeOpacity="0.15"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12 30 Q17.5 35, 23 30"
+      stroke="#A78BFA"
+      strokeWidth="1.5"
+      strokeOpacity="0.12"
+      strokeLinecap="round"
+    />
+  </svg>
+)
+
+const RunningShoe: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    width="70"
+    height="40"
+    viewBox="0 0 70 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M5 28 C5 28, 8 15, 20 15 L35 15 C40 15, 45 12, 50 12 L55 12 C60 12, 65 18, 65 25 L65 30 C65 32, 63 34, 60 34 L10 34 C7 34, 5 32, 5 28 Z"
+      stroke="#A78BFA"
+      strokeWidth="2"
+      strokeOpacity="0.15"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M15 34 L15 30 M25 34 L25 30 M35 34 L35 30 M45 34 L45 30 M55 34 L55 30"
+      stroke="#A78BFA"
+      strokeWidth="1.5"
+      strokeOpacity="0.12"
+      strokeLinecap="round"
+    />
+  </svg>
+)
+
+const Protein: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    width="45"
+    height="55"
+    viewBox="0 0 45 55"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M10 8 L35 8 M12 8 L12 15 L10 15 L10 50 C10 52, 12 54, 22.5 54 C33 54, 35 52, 35 50 L35 15 L33 15 L33 8"
+      stroke="#A78BFA"
+      strokeWidth="2"
+      strokeOpacity="0.15"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <text
+      x="22.5"
+      y="38"
+      textAnchor="middle"
+      fontSize="10"
+      fontWeight="bold"
+      fill="#A78BFA"
+      fillOpacity="0.15"
+      fontFamily="system-ui, sans-serif"
+    >
+      PRO
+    </text>
+  </svg>
+)
+
+const Plus: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    width="25"
+    height="25"
+    viewBox="0 0 25 25"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M12.5 5 L12.5 20 M5 12.5 L20 12.5"
+      stroke="#A78BFA"
+      strokeWidth="2"
+      strokeOpacity="0.15"
+      strokeLinecap="round"
+    />
+  </svg>
+)
+
+const RepText: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    width="60"
+    height="30"
+    viewBox="0 0 60 30"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <text
+      x="30"
+      y="22"
+      textAnchor="middle"
+      fontSize="16"
+      fontWeight="bold"
+      fill="#A78BFA"
+      fillOpacity="0.18"
+      fontFamily="system-ui, sans-serif"
+    >
+      REP!
+    </text>
+  </svg>
+)
+
 const doodles: DoodleConfig[] = [
+  // Left side
   {
     id: 'dumbbell',
     Component: Dumbbell,
@@ -279,6 +409,77 @@ const doodles: DoodleConfig[] = [
     position: { top: '25%', left: '12%' },
     animation: { type: 'pulse', duration: 2.5, delay: 0.3 },
   },
+  {
+    id: 'flame',
+    Component: Flame,
+    position: { bottom: '20%', left: '5%' },
+    animation: { type: 'float', duration: 3, delay: 0.6 },
+  },
+  // Center-left area
+  {
+    id: 'water-bottle',
+    Component: WaterBottle,
+    position: { top: '8%', left: '30%' },
+    animation: { type: 'float', duration: 3.5, delay: 0.4 },
+  },
+  {
+    id: 'star-center-1',
+    Component: Star,
+    position: { top: '35%', left: '25%' },
+    animation: { type: 'pulse', duration: 1.8, delay: 0.7 },
+  },
+  {
+    id: 'plus-1',
+    Component: Plus,
+    position: { bottom: '25%', left: '28%' },
+    animation: { type: 'pulse', duration: 2, delay: 1.3 },
+  },
+  // Top center
+  {
+    id: 'running-shoe',
+    Component: RunningShoe,
+    position: { top: '5%', left: '45%' },
+    animation: { type: 'float', duration: 4, delay: 0.2 },
+  },
+  {
+    id: 'star-top-center',
+    Component: Star,
+    position: { top: '18%', left: '48%' },
+    animation: { type: 'pulse', duration: 1.5, delay: 1 },
+  },
+  // Bottom center
+  {
+    id: 'rep-text',
+    Component: RepText,
+    position: { bottom: '8%', left: '42%' },
+    animation: { type: 'pulse', duration: 2.2, delay: 0.5 },
+  },
+  {
+    id: 'plus-2',
+    Component: Plus,
+    position: { bottom: '18%', left: '52%' },
+    animation: { type: 'pulse', duration: 1.8, delay: 0.9 },
+  },
+  // Center-right area
+  {
+    id: 'protein',
+    Component: Protein,
+    position: { top: '60%', right: '25%' },
+    animation: { type: 'bounce', duration: 3.2, delay: 0.8 },
+  },
+  {
+    id: 'star-center-2',
+    Component: Star,
+    position: { top: '75%', right: '30%' },
+    animation: { type: 'pulse', duration: 2, delay: 1.4 },
+  },
+  {
+    id: 'plus-3',
+    Component: Plus,
+    position: { top: '15%', right: '28%' },
+    animation: { type: 'pulse', duration: 1.6, delay: 0.6 },
+  },
+  // Right side
   {
     id: 'gains-text',
     Component: GainsText,
@@ -312,14 +513,8 @@ const doodles: DoodleConfig[] = [
   {
     id: 'star-2',
     Component: Star,
-    position: { top: '38%', left: '15%' },
+    position: { top: '42%', right: '18%' },
     animation: { type: 'pulse', duration: 2, delay: 1.5 },
-  },
-  {
-    id: 'flame',
-    Component: Flame,
-    position: { bottom: '20%', left: '5%' },
-    animation: { type: 'float', duration: 3, delay: 0.6 },
   },
 ]
 
