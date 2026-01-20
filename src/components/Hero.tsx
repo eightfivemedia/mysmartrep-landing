@@ -9,7 +9,7 @@ import Image from 'next/image'
 export default function Hero() {
   return (
     <section className="relative min-h-[calc(100vh-6rem)] lg:h-full flex items-center justify-center overflow-visible lg:overflow-hidden min-h-0 bg-[#1A1A1A] py-8 lg:py-0">
-      
+
       {/* Floating Fitness Doodles */}
       <FloatingDoodles />
 
@@ -45,13 +45,9 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* QR Code */}
-            <div className="flex justify-center">
+            {/* QR Code & Download Button */}
+            <div className="flex flex-col items-center gap-3">
               <QRCode />
-            </div>
-
-            {/* Download Button */}
-            <div className="flex justify-center">
               <DownloadButton />
             </div>
           </div>
