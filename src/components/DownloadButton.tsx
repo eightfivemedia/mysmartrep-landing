@@ -18,9 +18,9 @@ export default function DownloadButton() {
       <Image
         src="/images/app-store-badge.svg"
         alt="Download on the App Store"
-        width={250}
-        height={56}
-        className="h-14 w-[250px]"
+        width={220}
+        height={74}
+        className="h-[74px] w-auto"
         priority
       />
     </motion.a>
